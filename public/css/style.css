@@ -2,11 +2,12 @@
 
 :root {
 	--color1: #cfdbd5;
-	--color2: #e8eddf;
+	--color2: #d4d4d4;
 	--color3: #f5cb5c;
 	--color4: #242423;
 	--color5: #333533;
-	--color6: #444744
+	--color6: #444744;
+	--white: #FFFFFF
 }
 
 * {
@@ -19,14 +20,7 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	margin: 20px;
-}
-
-.index_body {
-	background: var(--color5);
-}
-
-.chat_body {
-	background: var(--color4);
+	background: var(--color2);
 }
 
 ul {
@@ -50,7 +44,7 @@ a {
 
 .chat-container {
 	max-width: 1100px;
-	background:#ffffff;
+	background:var(--white);
 	margin: 30px auto;
 	overflow: hidden;
 	border-radius: 15px;;
@@ -141,7 +135,7 @@ a {
 	margin: 80px auto;
 	color: var(--color3);
 	border: 3px solid var(--color3);
-	border-radius: 10px;
+	border-radius: 8px;
 }
 
 .join-header {
@@ -155,7 +149,8 @@ a {
 .join-main {
 	padding: 30px 40px;
 	background: var(--color4);
-	border-radius: 10px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 .join-main p {
