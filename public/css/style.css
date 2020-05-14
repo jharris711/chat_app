@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-	--dark-color-a: #667aff;
-	--dark-color-b: #7386ff;
-	--light-color: #e6e9ff;
-	--success-color: #5cb85c;
-	--error-color: #d9534f;
+	--color1: #cfdbd5;
+	--color2: #e8eddf;
+	--color3: #f5cb5c;
+	--color4: #242423;
+	--color5: #333533;
+	--color6: #444744
 }
 
 * {
@@ -15,10 +16,17 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
-	background: var(--light-color);
 	margin: 20px;
+}
+
+.index_body {
+	background: var(--color5);
+}
+
+.chat_body {
+	background: var(--color4);
 }
 
 ul {
@@ -32,8 +40,8 @@ a {
 .btn {
 	cursor: pointer;
 	padding: 5px 15px;
-	background: var(--light-color);
-	color: var(--dark-color-a);
+	background: var(--color2);
+	color: var(--color4);
 	border: 0;
 	font-size: 17px;
 }
@@ -42,14 +50,15 @@ a {
 
 .chat-container {
 	max-width: 1100px;
-	background: #fff;
+	background:#ffffff;
 	margin: 30px auto;
 	overflow: hidden;
+	border-radius: 15px;;
 }
 
 .chat-header {
-	background: var(--dark-color-a);
-	color: #fff;
+	background: var(--color6);
+	color: var(--color3);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	padding: 15px;
@@ -64,8 +73,8 @@ a {
 }
 
 .chat-sidebar {
-	background: var(--dark-color-b);
-	color: #fff;
+	background: var(--color5);
+	color: var(--color1);
 	padding: 20px 20px 60px;
 	overflow-y: scroll;
 }
@@ -94,7 +103,7 @@ a {
 .chat-messages .message {
 	padding: 10px;
 	margin-bottom: 15px;
-	background-color: var(--light-color);
+	background-color: var(--color1);
 	border-radius: 5px;
 }
 
@@ -112,7 +121,7 @@ a {
 
 .chat-form-container {
 	padding: 20px 30px;
-	background-color: var(--dark-color-a);
+	background-color: #444744;
 }
 
 .chat-form-container form {
@@ -130,20 +139,23 @@ a {
 .join-container {
 	max-width: 500px;
 	margin: 80px auto;
-	color: #fff;
+	color: var(--color3);
+	border: 3px solid var(--color3);
+	border-radius: 10px;
 }
 
 .join-header {
 	text-align: center;
 	padding: 20px;
-	background: var(--dark-color-a);
+	background: var(--color5);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
 
 .join-main {
 	padding: 30px 40px;
-	background: var(--dark-color-b);
+	background: var(--color4);
+	border-radius: 10px;
 }
 
 .join-main p {
@@ -186,4 +198,16 @@ a {
 	.chat-sidebar {
 		display: none;
 	}
+}
+
+.shadow-sm {
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+  
+.shadow {
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+  
+.shadow-lg {
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }

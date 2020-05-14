@@ -11,7 +11,7 @@ const app = express();
 const server = http.createServer(app);
 //Connect server to Socket.io
 const io = socketio(server);
-const PORT = process.env.PORT;
+const PORT = 3000 || process.env.PORT;
 //Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 const botName = 'Botsworth';
